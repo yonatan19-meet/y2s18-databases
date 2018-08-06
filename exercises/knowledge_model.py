@@ -14,4 +14,16 @@ class Knowledge(Base):
 	# topic of the article. The last column will be
 	# an integer, representing your rating of the article.
 
-	pass
+	__tablename__ = 'Knowledge'
+	topic_id = Column(Integer, primary_key=True)
+	topic = Column(String)
+	title = Column(String)
+	rating = Column(Integer)
+
+	def __repr__(self):
+		return("if you want to learn about " + self.topic + ", you should read the Wikipedia article called " + self.title +
+			" \nwe gave this article a rating of " + str(self.rating))
+
+
+x = Knowledge(topic = "theatre", title = "acting", topic_id = 1, rating = 9)
+print(x)
