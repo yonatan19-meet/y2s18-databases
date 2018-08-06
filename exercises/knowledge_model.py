@@ -25,5 +25,5 @@ class Knowledge(Base):
 			" \nwe gave this article a rating of " + str(self.rating))
 
 
-x = Knowledge(topic = "theatre", title = "acting", topic_id = 1, rating = 9)
-print(x)
+#x = Knowledge(topic = "theatre", title = "acting", topic_id = 1, rating = 9)
+#print(x)
